@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    width: 700px;
+    height: 350px;
+    border: 3px solid black;
+    flex-direction: column;
+}
+
+.head {
+    flex-basis: 25%;
+    display: flex;
+}
+
+#head1 {
+    flex-basis: 10%;
+    
+}
+
+#head2, #head3 {
+    flex-basis: 45%;
+}
+
+.head > div {
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+.body {
+    display: flex;
+    height: 75%;
+}
+
+.body1 {
+    height: 100%;
+    width: 20%;
+    
+}
+
+.body2 {
+    height: 100%;
+    width: 20%;
+    background-color: pink;
+    border: 2px solid black;
+    
+}
+.body3 {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+}
+.body4 {
+    display: flex;
+    height: 100%;
+    width: 20%;
+    flex-direction: column;
+}
+
+
+#body1-top {
+    background-color:cornflowerblue;
+    height: 34%;
+    border: 2px solid black;
+}
+#body1-mid {
+    background-color:cornflowerblue;
+    height: 33%;
+    border: 2px solid black;
+}
+#body1-bot {
+    background-color:cornflowerblue;
+    height: 33%;
+    border: 2px solid black;
+}
+
+#body4-top {
+    background-color: pink;
+    border: 2px solid black;
+    height: 25%;
+    
+}
+#body4-mid {
+    background-color: pink;
+    border: 2px solid black;
+    height: 50%;
+    
+}
+#body4-bot {
+    background-color: pink;
+    border: 2px solid black;
+    height: 25%;
+    
+}
+
+
+.body3-inbox {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+#body3-top{
+    background-color: coral;
+    flex-basis: 50%;
+    border: 2px solid black;
+}
+
+.body3-bot {
+    display: flex;
+    flex-basis: 100%;
+    
+
+}
+#body3-bot-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#left1 {
+    background-color: green;
+    border: 2px solid black;
+    height: 50%;
+}
+
+#left2 {
+    background-color: green;
+    border: 2px solid black;
+    height: 50%;
+    
+}
+
+#right {
+    background-color: brown;
+    flex-basis: 50%;
+    border: 2px solid black;
+}
+
+
+
+
+
+

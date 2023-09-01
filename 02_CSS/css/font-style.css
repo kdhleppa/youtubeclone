@@ -1,0 +1,47 @@
+#weight-test > li {
+    font-size: 34px;
+}
+
+#weight-test > li:nth-child(1) {font-weight: 600;}
+#weight-test > li:nth-child(2) {font-weight: bold;}
+#weight-test > li:nth-child(3) {font-weight: bolder;}
+#weight-test > li:nth-child(4) {font-weight: lighter;}
+#weight-test > li:nth-child(5) {font-weight: normal;
+font-style: italic;}
+
+.cls > li { font-size: 24px;}
+
+#family-test1 > li:nth-child(1) {
+    font-family: '궁서'; /* 설치된 폰트인 경우 */
+}
+
+#family-test1 > li:nth-child(2) {
+    font-family: '배달의민족체';
+     /* 없는 폰트인 경우 기본폰트로 설정됨 */
+}
+
+#family-test1 > li:nth-child(3) {
+    font-family: '배달의민족체', '굴림체';
+     /* 없는 폰트인 경우 대체 설정됨 */
+}
+
+
+#family-test2 > li:nth-child(1){
+    font-family : 'Roboto Condensed', sans-serif;
+}
+
+#family-test2 > li:nth-child(2){
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+@font-face {
+    font-family: 'HakgyoansimGaeulsopungB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimGaeulsopungB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+#family-test2 > li:nth-child(3){
+    font-family: 'HakgyoansimGaeulsopungB';
+}
+

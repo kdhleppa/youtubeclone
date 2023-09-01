@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_연습문제1</title>
+</head>
+<body>
+    <form action="">
+        <label for="">고객명 : </label><input type="text" name="clientName" id=""><br><br>
+        <label for="">전화번호 : </label><input type="tel" name="clientTel" id="" ><br><br>
+        <label for="">E-mail : </label><input type="email" name="clientEmail" id=""><br><br>
+
+    
+
+
+
+    
+        <label for="">피자선택 : </label>
+        <select name="pizza">
+            <option value="cheese" >치즈 피자</option>
+            <option value="pepperoni" >페퍼로니 피자</option>
+            <option value="patato" >포테이토 피자</option>
+            <option value="sweetp" >고구마 피자</option>
+            <option value="" selected>피자를 선택하세요</option>
+        </select>
+        <fieldset>
+            <legend>피자 사이즈</legend>
+            <input type="radio" name="size" id="s" value="small"><label for="s">Small</label><br><br>
+            <input type="radio" name="size" id="m" value="medium"><label for="m">Medium</label><br><br>
+            <input type="radio" name="size" id="l" value="large"><label for="l">Large</label><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>토핑 선택</legend>
+            <input type="checkbox" name="to" id="bacon" value="bacon"><label for="bacon">베이컨</label><br><br>
+            <input type="checkbox" name="to" id="cheese" value="cheese"><label for="cheese">치즈</label><br><br>
+            <input type="checkbox" name="to" id="onion" value="onion"><label for="onion">양파</label><br><br>
+            <input type="checkbox" name="to" id="mushroom" value="mushroom"><label for="mushroom">버섯</label><br><br>
+        </fieldset>        
+   
+
+   
+        희망배송시간 : <input type="time" name="" id="" value="time"><br><br>
+        배송시 요청사항 : <textarea name="" id="" cols="20" rows="3"></textarea><br><br>
+        <button type="submit">주문하기</button>
+    </form>
+
+</body>
+</html>

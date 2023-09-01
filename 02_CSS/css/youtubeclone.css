@@ -1,0 +1,426 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    position: sticky;
+    background-color: white;
+
+}
+
+#top1 {
+    display: flex;
+    flex-basis: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+#top2 {
+    display: flex;
+    flex-basis: 80%;
+
+}
+
+#top3 {
+    display: flex;
+    flex-basis: 10%;
+    justify-content: space-evenly;
+}
+
+#list-btn{
+    border: 0;
+    border-radius: 50%;
+    background-color: white;
+    height: 60%;
+    align-items: center;
+    
+    margin-left: 10px;
+    flex-basis: 20%;
+}
+
+#top1 button:hover {
+    cursor: pointer;
+    background-color: #bbb;
+    
+}
+#top1 > a {
+    flex-basis: 60%;
+}
+#top1 > a > img {
+    width: 100%;
+   
+
+}
+
+
+.search-area {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    
+}
+
+form[name="search-form"] {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    height: 80%;
+   
+
+}
+
+#top2 fieldset {
+    display: flex;
+    border-color: white;
+   
+    flex-basis: 45%;
+    
+}
+
+#query {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    outline: none; /* 0 도 가능 */
+    /* outline : input 태그에 포커스가 맞춰졌을 때
+        이를 표현하기 위한 바깥선
+    */
+    flex-basis: 76%;
+    border-right: none;
+    border-left: 1px solid grey;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+}
+
+#keyboard-btn {
+    flex-basis: 8%;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #555964;
+    height : 100%;
+    background-color: white;
+    border-top : 1px solid grey;
+    border-bottom : 1px solid grey;
+    border-left : none;
+    border-right: 1px solid grey;
+    
+}
+
+#search-btn {
+    cursor : pointer;
+    font-size: 1.2em;   
+    color: black;
+    background-color: rgb(228, 227, 227);
+    border-left: none;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    flex-basis: 8%;
+}
+
+#mic-btn {
+    flex-basis: 8%;
+    margin-left: 10px;
+    color: black;
+    background-color: rgb(228, 227, 227);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+#mic-btn:hover {
+    background-color: #555964;
+}
+
+#search-btn:hover {
+    background-color: #555964;
+}
+
+#top3 button {
+    cursor: pointer;
+    background-color: white;
+    font-size: 28px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    
+}
+
+#btn1:hover {
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+#btn2:hover {
+    cursor: pointer;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+
+}
+
+
+.left {
+    display: flex;
+    margin-left: 100px;
+    flex-basis: 70%;
+    flex-direction: column;
+}
+
+.right {
+    flex-basis: 30%;
+}
+
+#iframe {
+    flex-basis: 50%;
+}
+
+
+#name {
+    font-weight: bold;
+    font-size: 20px;
+    
+    
+}
+
+.total {
+    display: flex;
+    
+}
+
+#total-name {
+    flex-basis: 10%;
+}
+
+#uzuimg {
+    display: flex;
+    justify-content: center;
+    flex-basis: 5%;
+}
+
+#total-btn-sec1 {
+    flex-basis: 10%;
+}
+
+#empty{
+    flex-basis: 25%;
+}
+
+#total-btn-sec2{
+    flex-basis: 15%;
+}
+#total-btn-sec3{
+    flex-basis: 8%;
+}
+#total-btn-sec4{
+    flex-basis: 17%;
+}
+#total-btn-sec5{
+    flex-basis: 10%;
+}
+#total-btn-sec6{
+    flex-basis: 10%;
+}
+
+#uzuimg2 {
+    height: 75%;
+}
+
+#uzuname {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.total button {
+    font-size: 22px;
+
+   
+}
+
+.total-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#subs, #share, #download, #done, #clip {
+    margin: 10px;
+    color: black;
+    background-color: rgb(228, 227, 227);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    border: none;
+    cursor: pointer;
+    height: 50%;
+    flex-basis: 100%;
+}
+
+#subs:hover, #share:hover, #download:hover, #done:hover, #clip:hover
+, #like-left:hover, #like-right:hover {
+    background-color: rgb(180, 180, 180);
+}
+
+
+
+
+
+#like-left {
+    color: black;
+    background-color: rgb(228, 227, 227);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 50%;
+    border: none;
+    cursor: pointer;
+    flex-basis: 100%;
+    margin-left: 10px;
+
+}
+
+#like-right {
+    color: black;
+    background-color: rgb(228, 227, 227);
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px;
+    border: none;
+    cursor: pointer;
+    height: 50%;
+    flex-basis: 100%;
+    margin-right: 10px;
+}
+
+#textbox1 {
+    background-color: #bbb;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    margin: 10PX;
+    border: none;
+}
+
+
+
+
+.textbox-grey {
+    display: flex;
+    height: 170px;
+}
+
+.tb2 section {
+    background-color: #bbb;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    margin: 10PX;
+    border: none;
+    flex-basis: 50%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    margin-right: 150px;
+}
+
+#icon {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon button {
+    font-size: 18px;
+}
+
+.icon0 {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 5px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+#icon1:hover {
+    background-color:#555964;
+    color: black;
+}
+
+#icon2:hover {
+    background-color:#555964;
+    color: black;
+}
+
+#icon3:hover {
+    background-color:#555964;
+    color: black;
+}
+
+#icon1 {
+    color: white;
+    background-color: black;
+    flex-basis: 15%;
+    margin: 5px;
+}
+
+#icon2, #icon3 {
+    background-color: #bbb;
+    margin: 5px;
+ }
+
+ #icon4 {
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+ }
+
+ #icon4:hover {
+    background-color: #bbb;
+ }
+
+
+ #iframe-list {
+    list-style: none;
+ }
+ 
+ .lic {
+    display: flex;
+    margin-bottom: 20px;
+ }
+ .lic iframe {
+    margin-right: 10px;
+ }
+
+.lic a {
+    text-decoration: none;
+    color: black;
+}

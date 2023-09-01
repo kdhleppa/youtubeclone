@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유튭클론</title>
+    <link rel="stylesheet" href="/02_CSS/css/youtubeclone.css">
+    <script src="https://kit.fontawesome.com/75b9a966ac.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <main>
+
+        <header>
+
+            <!-- 목록 유튭로고-->
+            <section id="top1">
+                <button id="list-btn" class="fa-solid fa-bars"></button>
+                <a href="#">
+                    <img src="/images/youtube-logo.png" id="youtube-logo">
+                </a>
+
+            </section>
+
+            <!-- 검색창 부분-->
+            <section id="top2">
+                <section class="search-area">
+                    <form action="#" name="search-form">
+                        <fieldset class="top2-fis">
+                            <input type="search" id="query" name="query"
+                            autocomplete="off" placeholder="검색">
+                            <button id= "keyboard-btn" class="fa-regular fa-keyboard"></button>
+                            <button id= "search-btn" class="fa-solid fa-magnifying-glass"></button>
+                            <button id= "mic-btn" class="fa-solid fa-microphone"></button>
+                        </fieldset>
+                        
+                    </form>
+                </section>
+
+            </section>
+
+            <!-- 캠, 종, 개인부분-->
+            <section id="top3">
+                <button id="btn1" class="fa-solid fa-video"></button>
+                <button id="btn2" class="fa-solid fa-bell"></button>
+                <button id="btn3" class="fa-brands fa-google-plus"></button>
+            </section>
+
+
+        </header>
+
+        <nav>
+            <!-- 동영상, 제목, 이름, 구독자, 구독중
+            좋아요, 등등-->
+            <section class="left">
+                <section id="iframe">
+                    <iframe width="1421" height="800" src="https://www.youtube.com/embed/bJwM0D4gYkg" title="시청자도 개열받는 팬게임 개발자 집주소 삽니다" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </section>
+                <!--제목부분-->
+                <section>
+                    <p id="name">시청자도 개열받는 팬게임 개발자 집주소 삽니다</p>
+                </section>
+                
+                
+                
+                <!--아이콘, (이름, 구독자), 구독중, 좋아요싫어요 공유 오프저장 도네 클립-->
+                <section class="total">
+                    <!--아이콘-->
+                    <section id="uzuimg">
+                        <a href="#">
+                            <img src="/images/unnamed.jpg" id="uzuimg2">
+                        </a>
+                    </section>
+                    <!--이름, 구독자-->
+                    <section id="total-name">
+                        <!-- 이름-->
+                        <section>
+                            <a href="#" id="uzuname">우주하마</a>
+                        </section>
+                        <!-- 구독자-->
+                        <section>
+                            <p>구독자 175만명</p>
+                        </section>
+                    </section>
+                    <!-- 구독중-->
+                    <section class="total-btn" id="total-btn-sec1">
+                        <button id="subs" class="fa-regular fa-bell">구독중</button>
+                    </section>
+                    <!--빈칸-->
+                    <section id="empty"></section>
+                    <!-- 좋아요싫어요-->
+                    <section class="total-btn" id="total-btn-sec2">
+                        <button id="like-left" class="fa-regular fa-thumbs-up">1.1천</button>
+                        <button id="like-right" class="fa-regular fa-thumbs-down"></ㅠ>
+                    </section>
+                    <!-- 공유-->
+                    <section class="total-btn" id="total-btn-sec3">
+                        <button id="share" class="fa-solid fa-share">공유</ㅠ>
+                    </section>
+                    <!-- 다운로드-->
+                    <section class="total-btn" id="total-btn-sec4">
+                        <button id="download" class="fa-solid fa-download">오프라인 저장</ㅠ>
+                    </section>
+                    <!-- 도네이션-->
+                    <section class="total-btn" id="total-btn-sec5">
+                        <button id="done" class="fa-solid fa-sack-dollar">Thanks</button>
+                    </section>
+                    <!-- 클립-->
+                    <section class="total-btn" id="total-btn-sec6">
+                        <button id="clip" class="fa-solid fa-scissors">클립</button>
+                    </section>
+                </section>
+
+                <!-- 내용박스 1 -->
+                <section class="textbox-grey" id="textbox1">
+                    1 <br>
+                    2 <br>
+                    3 <br>
+                </section>
+                <!-- 내용박스 2 2분할-->
+                <section class="textbox-grey tb2">
+                    <section id="textbox2">
+                    <p> 왼쪽</p>
+                    </section>
+                    <section id="textbox3">
+                    <p> 오른쪽</p>    
+                    </section>
+                </section>
+            </section>
+            
+            
+
+
+            <!-- 동영상 목록-->
+            <section class="right">
+                <!-- 아이콘부분-->
+                <section id="icon">
+                    <!-- 모두, 관련 콘텐츠, 최근에 업로드된 동영상,   >  -->
+                    
+                    <button class = "icon0" id="icon1">모두</button>
+                    
+                    
+                    <button class = "icon0" id="icon2">관련 콘텐츠</button>
+                    
+                    <button class = "icon0" id="icon3">최근에 업로드된 동영상</button>
+                    
+                    <button  id="icon4">></button>
+
+                </section>
+                <!-- 영상목록부분-->
+                <section>
+                    <ol id="iframe-list">
+                        <li class="lic">
+                            <iframe width="170" height="110" src="https://www.youtube.com/embed/TEMhTHV3pUg" title="AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <a href="#">AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함 <br><br>
+                            우주하마</a>
+                        </li>
+                        <li class="lic">
+                            <iframe width="170" height="110" src="https://www.youtube.com/embed/TEMhTHV3pUg" title="AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <a href="#">AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함 <br><br>
+                            우주하마</a>
+                        </li>
+                        <li class="lic">
+                            <iframe width="170" height="110" src="https://www.youtube.com/embed/TEMhTHV3pUg" title="AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <a href="#">AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함 <br><br>
+                            우주하마</a>
+                        </li>
+                        <li class="lic">
+                            <iframe width="170" height="110" src="https://www.youtube.com/embed/TEMhTHV3pUg" title="AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <a href="#">AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함 <br><br>
+                            우주하마</a>
+                        </li>
+                        <li class="lic">
+                            <iframe width="170" height="110" src="https://www.youtube.com/embed/TEMhTHV3pUg" title="AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <a href="#">AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함 <br><br>
+                            우주하마</a>
+                        </li>
+                        <li class="lic">
+                            <iframe width="170" height="110" src="https://www.youtube.com/embed/TEMhTHV3pUg" title="AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <a href="#">AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함 <br><br>
+                            우주하마</a>
+                        </li>
+                        <li class="lic">
+                            <iframe width="170" height="110" src="https://www.youtube.com/embed/TEMhTHV3pUg" title="AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <a href="#">AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함 <br><br>
+                            우주하마</a>
+                        </li>
+                        <li class="lic">
+                            <iframe width="170" height="110" src="https://www.youtube.com/embed/TEMhTHV3pUg" title="AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <a href="#">AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함 <br><br>
+                            우주하마</a>
+                        </li>
+                        <li class="lic">
+                            <iframe width="170" height="110" src="https://www.youtube.com/embed/TEMhTHV3pUg" title="AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <a href="#">AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함 <br><br>
+                            우주하마</a>
+                        </li>
+                        <li class="lic">
+                            <iframe width="170" height="110" src="https://www.youtube.com/embed/TEMhTHV3pUg" title="AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <a href="#">AI 닭 인척 연기해야하는 게임ㅋㅋㅋㅋ이분은 연기대상 줘야함 <br><br>
+                            우주하마</a>
+                        </li>
+                        
+                        
+                        
+                    </ol>
+                </section>
+            </section>
+            
+        </nav>
+
+
+    </main>
+
+    
+</body>
+</html>
