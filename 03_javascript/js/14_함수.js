@@ -48,3 +48,16 @@ document.getElementById("btn2-3").addEventListener("click", () => {
 function printConsole(fn) { // 매개변수로 함수가 전달됨
     console.log( fn(2) );
 }
+
+// this 사용 불가
+// 1) 익명함수는 this 사용가능
+document.getElementById("btn2-4").addEventListener("click", function(){
+    this.style.backgroundColor = "red";
+})
+
+// 2) 화살표함수는 this 사용 불가
+document.getElementById("btn2-4").addEventListener("click", (e)=>{
+    console.log(this);
+
+    e.target.style.color = "white";
+})
