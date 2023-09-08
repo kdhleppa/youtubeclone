@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+div {
+    border: 1px solid red;
+    margin-left: -8px;
+    margin-top: -8px;
+}
+section {
+    border: 1px solid black;
+}
+
+#topbar {
+    background-color: #F0F2A0;
+    height: 88;
+    width: 1920px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+#topbar p {
+    font-size: 24px;
+    color: black;
+}
+
+header {
+    position: sticky; top: 0;
+}
+#top-sec1 {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#top-sec2 {
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center;
+}
+#top-sec3 {
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center;
+}
+#top-sec4 {
+    flex-basis: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+#div1 {
+    background-color: #E9F2ED;
+    height: 1080px;
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#div2 {
+    background-color:#F2BE7E;
+    height: 1080px;
+    width: 1920px;
+}
+
+#div3 {
+    background-color: #F2D4AE;
+    height: 1080px;
+    width: 1920px;
+}
+
+#div1-sec1{
+    flex-basis: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#div1-sec2{
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#div1-sec3{
+    flex-basis: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#fts {
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 3;
+}
+#aboutme {
+    text-align: center;
+    font-size: 48px;
+}
+
+#usericon, #phoneicon, #pencilicon{
+    width: 40px;
+}
+
+
+
+a {
+    text-decoration: none;
+
+}
+
+#fix {
+    position: fixed; right: 50px; bottom: 50px;
+    width: 66px;
+    height: 66px;
+    
+}
+
+#div1-sec3-sec1, #div1-sec3-sec2, #div1-sec3-sec3{
+    display: flex;
+    width: 1000px;
+    align-items: center;
+}
+
+
+#div1-sec3 p {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+#div2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#div2-div1 {
+    width: 1200px;
+    height: 600px;
+    background-color: FFF3E2;
+    border-radius: 50px;
+}
+
+#div2-ul {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+#div2-ul li{
+    font-size: 24px;
+}
