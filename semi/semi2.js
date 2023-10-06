@@ -53,9 +53,7 @@ document.getElementById("btn").addEventListener("click", function(){
 
 
 
-// 이전에 생성한 마커 객체를 저장하는 변수
-
-// 이전 마커를 삭제하는 함수
+// 이전 마커와 인포윈도를 삭제하는 함수
 function removePreviousMarker() {
     if (previousMarker !== null) {
         previousInfowindow.close();
@@ -67,3 +65,12 @@ function removePreviousMarker() {
 }
 
 
+// "마커 보이기" 버튼을 클릭하면 호출되어 배열에 추가된 마커를 지도에 표시하는 함수입니다
+function showMarkers() {
+    setMarkers(map)    
+}
+
+// "마커 감추기" 버튼을 클릭하면 호출되어 배열에 추가된 마커를 지도에서 삭제하는 함수입니다
+function hideMarkers() {
+    setMarkers(null);    
+}

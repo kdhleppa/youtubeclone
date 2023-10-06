@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+div {
+    border: 1px solid red;
+}
 
 
 
@@ -12,6 +15,10 @@
     height: 66px;
 }
 
+#realbtn {
+    position: fixed; right: 50px; top: 200px;
+    
+}
 /* 상단바 부분 */
 header {
     position: sticky; top: 0;
@@ -233,6 +240,8 @@ header {
     
 }
 
+
+
 .logo {
     width: 66px;
     
@@ -253,6 +262,47 @@ header {
     line-height: 40px;
 }
 
-.#div3-div1
+#div4 {
+    background-color: #b8aea2;
+    height: 1080px;
+    width: 1920px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+#div4-1 {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
+#div4-sec1{
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#div4-sec1 p {
+    font-size: 48px;
+    font-weight: bolder;
+    
+}
+
+#div4-1 p {
+    font-size: 30px;
+    font-weight:bolder;
+}
+
+#startBtn {
+    margin-top: 50px;
+    width: 100px;
+    height: 70px;
+}
